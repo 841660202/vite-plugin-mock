@@ -26,7 +26,14 @@ export declare interface MockMethod {
   statusCode?: number
   response?: (
     this: RespThisType,
-    opt: { url: Recordable; body: Recordable; query: Recordable; headers: Recordable },
+    opt: {
+      url: Recordable
+      body: Recordable
+      query: Recordable
+      headers: Recordable
+      method: MethodType
+    },
+    req: ServerResponse,
   ) => any
   rawResponse?: (this: RespThisType, req: IncomingMessage, res: ServerResponse) => void
 }

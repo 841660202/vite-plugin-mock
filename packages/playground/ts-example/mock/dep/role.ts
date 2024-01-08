@@ -3,7 +3,17 @@ export default [
   {
     url: '/api/getRoleById',
     method: 'get',
-    response: ({ query }) => {
+    response: (req, res) => {
+      console.log('res', res)
+      res.statusCode = 200
+      res.end(
+        JSON.stringify({
+          hello: 'world',
+        }),
+      )
+      return
+      console.log('method', req.method)
+      const { query } = req
       console.log('id>>>>>>>>', query.id)
       return {
         code: 0,
@@ -18,8 +28,10 @@ export default [
   {
     url: '/api/testRestful/:id',
     method: 'get',
-    response: ({ query }) => {
-      console.log('id>>>>>>>>', query.id)
+    response: (req) => {
+      console.log('req', req)
+      const { query } = req
+      console.log('id>>>>1121>>>>', query.id)
       return {
         code: 0,
         message: 'ok',
