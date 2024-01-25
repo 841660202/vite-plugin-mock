@@ -133,6 +133,7 @@ function createWatch(opt: ViteMockOptions, config: ResolvedConfig) {
 
   const watcher = chokidar.watch(watchDir, {
     ignoreInitial: true,
+    ignored: /^.+\.bundled_.+\.mjs$/, // 忽略bundle-require临时文件的影响（所有以 xxxx.bundled.xxxxx.mjs 格式文件）
   })
 
   watcher.on('all', async (event, file) => {
