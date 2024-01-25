@@ -1,0 +1,24 @@
+{
+	"files": [
+		{
+			"path": "packages/vite-plugin-mock/src/createMockServer.ts",
+			"bookmarks": [
+				{
+					"line": 145,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 178,
+					"column": 10,
+					"label": ""
+				},
+				{
+					"line": 201,
+					"column": 4,
+					"label": ""
+				}
+			]
+		}
+	]
+}

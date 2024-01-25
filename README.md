@@ -299,3 +299,11 @@ MIT
 [npm-url]: https://npmjs.com/package/vite-plugin-mock
 [node-img]: https://img.shields.io/node/v/vite-plugin-mock.svg
 [node-url]: https://nodejs.org/en/about/releases/
+
+## bug
+
+<a href="https://github.com/vbenjs/vite-plugin-mock/issues/98#issuecomment-1782467433" target="_blank" >issues/98</a>
+
+<a href="https://github.com/egoist/bundle-require/blob/e9268f7099e2ecf7fd2deec2b0ea7d55df632d38/src/index.ts#L224" target="_blank" >writeFile</a>
+
+<a href="https://github.com/egoist/bundle-require/blob/e9268f7099e2ecf7fd2deec2b0ea7d55df632d38/src/index.ts#L236" target="_blank" >unlink</a>

@@ -11,10 +11,6 @@ export default [
           hello: 'world',
         }),
       )
-      return
-      console.log('method', req.method)
-      const { query } = req
-      console.log('id>>>>>>>>', query.id)
       return {
         code: 0,
         message: 'ok',
